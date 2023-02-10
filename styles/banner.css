@@ -1,0 +1,169 @@
+
+.banner__sobre-nos {
+    text-align: center;
+    padding: 5vw 20vw;
+}
+
+.banner__titulo {
+    font-weight: 600;
+    color: var(--red);
+}
+
+.banner__titulo-principal {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--gray-900);
+    padding: .8em 0;
+}
+
+.banner__texto {
+    color: var(--gray-500);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 8vw;
+}
+
+.diferenciais {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw;
+}
+
+.diferenciais__item {
+    width: 20%;
+}
+
+.diferenciais__item-numero {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--red);
+}
+
+.diferenciais__item-titulo {
+    font-size: 18px;
+    color: var(--gray-900);
+    margin: 1em 0;
+}
+
+.diferenciais__item-texto {
+    font-weight: 400;
+    color: var(--gray-500);
+}
+
+.banner__vagas-abertas {
+    text-align: center;
+    padding: 5vw 20vw 1vw 20vw;
+}
+
+.banner__titulo--vagas {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+}
+
+.banner__titulo--vagas-abertas {
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(---background-secundario); 
+    border-radius: 15px;
+    padding: 0.5em;
+    background: var(--background-secundario);
+}
+
+.banner__titulo-principal--talentos {
+    font-size: 36px;
+}
+
+.banner__vagas--imagem {
+    display: flex;
+    justify-content: center;
+    margin: 4em auto 0 auto;
+}
+
+.imagem-reuniao {
+  width: 100%;
+}
+
+.banner-comentario {
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+}
+
+.banner-comentario__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-secundario);
+    border-radius: 15px;
+    padding: 3em;
+    width: 70vw;
+}
+
+.banner-comentario__titulo {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--red);
+    
+}
+
+.banner-comentario__titulo-principal {
+    font-size: 36px;
+    color: var(--gray-900);
+    text-align: center;
+    margin: .5em;
+    width: 80%;
+}
+
+.nome-colaborador {
+    color: var(--gray-900);
+    margin: .5em;
+}
+
+.container__botao {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .banner__sobre-nos {
+        
+        padding: 5vw 5vw;
+    }
+
+    .banner__texto {
+        padding: 0 3vw;
+    }
+
+    .diferenciais {
+        display: block;
+        padding: 0 15vw;
+    }
+
+    .diferenciais__item {
+        width: 100%;
+        text-align: center;
+        margin: 2em 0 2em;
+    }
+    
+    .banner__vagas-abertas {
+        text-align: center;
+        padding: 5vw 3vw 1vw 5vw;
+    }
+    
+    .banner__vagas--imagem {
+        display: none; 
+    }
+    
+    .banner-comentario__titulo {
+        text-align: center;
+    }
+    
+    .banner-comentario__titulo-principal {
+        font-size: 20px;
+        margin: .5em 0;
+        width: 100%;
+    }
+
+}
+

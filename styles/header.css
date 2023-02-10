@@ -1,0 +1,138 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecalho__titulo {
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.cabecalho__titulo--logo {
+    margin: 0 .5em;
+}
+
+.cabecalho__titulo--texto {
+    font-size: 18px;
+    color: var(--gray-tittle);
+}
+
+.lista-paginas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.8em;
+    
+}
+
+.lista-paginas__link {
+    color: var(--gray-500);
+    text-decoration: none;
+    margin: 0 .5em;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.botoes__item {
+    margin: 0 0.5em;
+}
+
+.botoes__item--entrar {
+    color: var(--gray-500);
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: .7em;
+}
+
+.botoes__item--cadastrar {
+    color: var(--white);
+    background: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 7px;
+    padding: .7em;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 1em;
+        position: relative;
+
+    }
+
+    .cabecalho__titulo {
+        justify-content: center;
+    }
+
+    .cabecalho__botoes {
+        display: none;
+    }
+
+    .cabecalho__paginas {
+        margin: 0;
+    }
+
+    .cabecalho__menu-hamburguer {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    
+    .container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+        background-image: url("../img/MenuAberto.svg");
+    }
+    
+    .container__botao:checked ~ .container__rotulo {
+        background: var(--red);
+
+    }
+
+    .container__rotulo {
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container__botao:checked~.lista-paginas {
+        display: block;
+    }
+
+    .lista-paginas {
+        display: none;
+        position: absolute;
+        padding: 1em 0;
+        text-align: left;
+        background: var(--red);
+        width: 30%;
+    }
+
+    .container__botao {
+        display: none;
+    }
+
+    .lista-paginas__item {
+        margin: .5em 1em;
+       
+    }
+
+    .lista-paginas__link {
+        margin: 0;
+        color: var(--white);
+    }
+}

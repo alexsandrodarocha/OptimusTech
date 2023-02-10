@@ -1,0 +1,48 @@
+
+
+.vagas__disponiveis {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vagas__titulo {
+    font-size: 20px;
+    color: var(--gray-900);
+    width: 50%;
+    margin: 2em 0;
+}
+
+.vagas__item {
+    border: 1px solid #EAECF0;
+    border-radius: 15px;
+    padding: 1em;
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.vaga__item--titulo {
+    font-size: 18px;
+    color: var(--gray-900);
+}
+
+.vaga__item--descricao {
+    display: flex;
+    margin-top: 2em;
+    color: var(--gray-500);
+}
+
+.vaga__item--horario {
+    margin-right: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .vagas__titulo {
+        width: 75%;
+    }
+    
+    .vagas__item {
+        width: 75%;
+    }
+
+}
